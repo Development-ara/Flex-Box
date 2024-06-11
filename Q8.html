@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+  .flex-container {
+    display: flex;
+    gap: 5px;
+  }
+
+  .flex-container div {
+    background-color: lightblue;
+    height: 100px;
+    flex-grow: 1; 
+  }
+  .flex-container > div:nth-child(2){
+    flex-grow: 2;
+
+  }
+
+  .nested-container  {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: lightpink;
+  }
+
+  
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>Item 1</div>
+        <div class="nested-container">
+          <div>Nested Item 1</div>
+          <div>Nested Item 2</div>
+        </div>
+        <div>Item 3</div>
+      </div>
+    
+</body>
+</html>
